@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context="com.example.sungshin.huddle.LoginJoin.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="300dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/id_white"
+                    android:hint="아이디를 입력하세요"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/Passwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/id_white"
+                    android:hint="패스워드를 입력하세요"
+                    android:password="true"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnJoin"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/joinjoin" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/loginicon" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

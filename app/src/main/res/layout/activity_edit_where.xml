@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_where"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+
+    tools:context="com.example.sungshin.huddle.EditActivity.EditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btnEditWhere"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/glass" />
+
+        <EditText
+            android:id="@+id/editWhereSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/redline" />
+
+    <LinearLayout
+        android:id="@+id/map_view_edit"
+        android:layout_width="328dp"
+        android:layout_height="298dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnEditLocConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/choi" />
+
+    </LinearLayout>
+
+</LinearLayout>

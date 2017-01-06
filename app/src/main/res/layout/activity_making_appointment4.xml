@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_making_appointment4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sungshin.huddle.MakingAppointment.MakingAppointmentActivity4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/confirmconfirm">
+
+                <Button
+                    android:id="@+id/btnconfirmbefore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/back" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:paddingTop="12dp"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:textColor="#e02222"
+                        android:text="모임제목" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="확인창"
+                            android:textAlignment="center"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:paddingLeft="10dp"
+
+                            android:src="@drawable/twomen" />
+
+
+                        <EditText
+                            android:id="@+id/editRoomName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:paddingRight="10dp"
+
+                            android:layout_weight="2"
+                            android:background="@drawable/red_confirm" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/editRoomContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/red2_confirm" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginTop="10dp"
+                    android:text="누구"
+                    android:textColor="#E02222"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginRight="36dp"
+                    android:background="@drawable/box_confirm"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/numbers" />
+
+                    <TextView
+                        android:id="@+id/persontext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="100dp"
+                        android:layout_weight="8"
+                        android:text="몇 명"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="21dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="언제"
+                android:layout_marginLeft="36dp"
+                android:textColor="#E02222"
+                android:textSize="15dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/box_confirm"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/calendar" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:visibility="invisible" />
+
+                    <CheckBox
+                        android:id="@+id/checkWhenFix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="27dp"
+                        android:layout_marginTop="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginLeft="26dp"
+                    android:background="#ffffffff">
+
+                    <Button
+                        android:id="@+id/monthPrevious"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:gravity="center_horizontal"
+                        android:background = "@drawable/whenright"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="40dp" />
+
+                    <TextView
+                        android:id="@+id/monthText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="MonthView"
+                        android:textColor="#f0144b"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/monthNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background = "@drawable/whenleft"
+                        android:gravity="center_horizontal"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="40dp" />
+                </RelativeLayout>
+
+
+                <com.example.sungshin.huddle.MakingAppointment.CalendarActivity.CalendarMonthView
+                    android:id="@+id/monthView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/line"
+                android:layout_marginTop = "11dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="10dp"
+                android:text="어디"
+                android:textColor="#E02222"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/box_confirm"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src ="@drawable/whereis"
+                    android:layout_margin="20dp"
+                    android:layout_weight="2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:visibility="invisible" />
+
+
+                <CheckBox
+                    android:id="@+id/checkWhereFix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="27dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/map_view4"
+                android:layout_width="299dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="18dp"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <!-- 지도 -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn4Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "취소"
+                    android:textSize="17dp"
+                    android:textColor="#F0144B"
+                    android:background="@color/white"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="10"
+                    android:background = "@color/white"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnCompleteRoomCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="확인"
+                    android:textSize="17dp"
+                    android:background="@color/white"
+                    android:textColor="#000000"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

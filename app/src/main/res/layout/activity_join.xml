@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_join"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/white"
+    tools:context="com.example.sungshin.huddle.LoginJoin.JoinActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/join_button">
+
+        <Button
+            android:layout_marginLeft="16dp"
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="0.1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp">
+
+            <!--<ImageView
+                android:id="@+id/profile2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/bighuman"/>
+    -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/bighuman" />
+
+            <Button
+                android:id="@+id/btnInputProfile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/camera"
+                android:layout_gravity="right"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redround"
+                android:layout_marginRight="7dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/id"
+                android:layout_marginRight="7dp"
+                android:id="@+id/imageView2" />
+
+            <EditText
+                android:id="@+id/inputID"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:hint="   아이디"
+                android:textSize="12dp"
+                android:background="@drawable/box_red"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <Button
+                android:id="@+id/btnCheckId"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/check"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redround"
+                android:layout_marginRight="7dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/password"
+                android:layout_marginRight="7dp"/>
+
+            <EditText
+                android:id="@+id/inputPasswd"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:hint="   비밀번호"
+                android:password="true"
+                android:textSize="12dp"
+                android:background="@drawable/box_red"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redround"
+                android:layout_marginRight="7dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/password"/>
+
+            <EditText
+                android:id="@+id/inputRePasswd"
+                android:background="@drawable/box_red"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:hint="   비밀번호 확인"
+                android:password="true"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redround"
+                android:layout_marginRight="7dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/id"/>
+
+            <EditText
+                android:id="@+id/inputName"
+                android:background="@drawable/box_red"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:hint="   이름"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redround"
+                android:layout_marginRight="7dp"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/phone"
+                android:layout_marginRight="7dp"/>
+
+            <EditText
+                android:id="@+id/inputPhone"
+                android:background="@drawable/box_red"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:hint="   핸드폰 번호"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundwhite"
+                android:layout_marginRight="7dp"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home"
+                android:layout_marginRight="7dp"
+                android:id="@+id/imageView3" />
+
+            <EditText
+                android:id="@+id/inputHome"
+                android:background="@drawable/box_red"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:hint="   거주지 정보"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundwhite"
+                android:layout_marginRight="7dp"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/school"
+                android:layout_marginRight="7dp"/>
+            <EditText
+                android:id="@+id/inputWork"
+                android:background="@drawable/box_red"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:hint="   직장 또는 학교"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnCompleteJoin"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:background="@drawable/joinoff"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
